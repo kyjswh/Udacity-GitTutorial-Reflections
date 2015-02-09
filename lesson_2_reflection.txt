@@ -1,0 +1,32 @@
+1.command 'git init' creates new repository recording histories in the current directory, enabling users to track the history of files.
+
+2.Command 'git status' shows the status of the current repository history (whether there is previous commit) 
+
+3. Staging area is an intermediate stage between working directory and repository. Usually users make the command 'git add' to add new files into the staging area, and run the command 'git commit' to commit all the changes already in the staging area
+
+4. The staging area makes it easier for users to commit logically separate changes (file1, file2, ...)
+
+5. Git branch creates new branches for making modifications. It enables separate versions of codes to be developed and future possibilities of merging two 'roads' of development, which is crucial for open source softwares.
+	git branch branch_name   create new branch
+	git checkout branch_name  move to a branch
+
+6. How do the diagrams help you visualize the branch structure?
+Writing diagrams helps me to see the structure of recent commits and which node at the commit history can be tracked and modified:
+		git log --graph --oneline node_1 node_2
+
+7.What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The changes made in two branches are combined together. Representing the merge in the diagram enables us to see what commits can be merged or not.
+        git merge branch_1 branch_2
+        git branch -d branch_1
+
+8. What are the pros and cons of Git's automatic merging vs.always doing merges amanually?
+
+Automatic merging allows users to merge changes that occurs only within one branch without conflicts
+Manual merges help users to resolve merge conflicts occuring due to the modification on the same part of codes, which would introduce bug.
+	Steps:
+		1. git merge branch1 branch2 (this will merge to the branch where you are at, either 1 or 2)
+			-look at messages for conflicts
+                2. manually modify the file parts which cause conflicts
+                3. git add modified_files
+                4. git commit 

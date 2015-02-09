@@ -1,0 +1,39 @@
+
+1.How could having easy access to an entire history of a file make a programmer more efficient?
+
+The advantage of having access to the entire history of file enables a programmer to find problems in early stage
+
+Being able to inspect where the problem is makes programming more efficient
+
+On large projects, this can help tracking team member's contributions and progress
+
+2.
+
+Version Control
+
+Version control is the system that allows updating creating, accessing and viewing of version contents
+Commit is the step of manually making a change to a file in a git control system
+
+3.What do you think are the pros and cons of manually choosing when to create a commit like you do in Git, vs having versions automatically saved, like Google Docs does?
+
+Pros: 1. Easy to customize when you want to make a change. You can decide to commit change at once for different logical parts (functions) of a file, which makes it easier to track changes
+      2. Much easier to track history (vs every change is automatically saved in Google Doc type version control)
+
+Cons: Sometimes not quite convenient
+
+4. Why do you think some version control systems, like Git allow saving multiple files in one commit while others, like Google Docs, treat each file separately?
+
+One important purpose Git is to allow tracking modifications in interrelated files of a project. We should be able to see how these modifications are correlated with each other.
+
+In Google Docs, users usually work on a file separately, without much interactions between different files
+
+5. How can you use the command git log and git diff to view the history of files?
+Using
+git log to track commits
+and use git diff
+to compare changes between two commits
+
+6. How might version control make you more confident to make changes that could break something?
+Because we are able to view at which point we made the change that produced bugsby checking out at different time point of the entire commit history (like going back to the past using time machine!)
+
+
